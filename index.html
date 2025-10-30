@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог Дарьи Шутиковой</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Блог Дарьи Шутиковой</h1>
+    <p>Готовка, творчество и маленькие радости жизни</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Рецепты</a></li>
+      <li><a href="#">Творчество</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <article>
+        <h2>Мой любимый рецепт</h2>
+        <p>Недавно я приготовила удивительный шоколадный торт с ягодами. Рецепт простой, но получается очень вкусно!</p>
+      </article>
+      <article>
+        <h2>Творческая идея недели</h2>
+        <p>На этой неделе я попробовала рисовать акварелью. Это расслабляет и позволяет выразить эмоции через цвет.</p>
+      </article>
+
+      <!-- Аккордеон -->
+      <section class="accordion">
+        <div class="accordion-item">
+          <h3 class="accordion-title">Мой любимый десерт</h3>
+          <div class="accordion-content">
+            Шоколадный мусс с вишнёвым соусом — просто рай для сладкоежек!
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-title">Любимое время года</h3>
+          <div class="accordion-content">
+            Осень — вдохновляющее время. Я обожаю запах кофе и уютные вечера.
+          </div>
+        </div>
+      </section>
+
+      <!-- Галерея -->
+      <section class="gallery-section">
+        <h2>Моя фотогалерея</h2>
+
+        <div class="filters">
+          <button data-category="all">Все</button>
+          <button data-category="food">Еда</button>
+          <button data-category="art">Творчество</button>
+        </div>
+
+        <div class="gallery">
+          <img src="1.jpg" data-category="food" alt="Торт">
+          <img src="2.jpg" data-category="food" alt="Печенье">
+          <img src="3.jpg" data-category="art" alt="Рисунок">
+          <img src="4.jpg" data-category="art" alt="Акварель">
+          <img src="5.jpg" data-category="food" alt="Салат">
+          <img src="6.jpg" data-category="art" alt="Декор">
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Обо мне</h3>
+      <p>Привет! Я Дарья, люблю готовить и творить. Веду этот блог, чтобы делиться своими идеями.</p>
+      <h3>Популярные темы</h3>
+      <ul>
+        <li>Рецепты</li>
+        <li>Творчество</li>
+        <li>Путешествия</li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Модальное окно -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <!-- Кнопка "Наверх" -->
+  <button id="scrollTopBtn" class="scroll-btn">↑</button>
+
+  <footer>
+    <p>© 2025 Дарья Шутикова. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #fcf8f1;
+  color: #5b4636;
+}
+
+/* HEADER */
+header {
+  background-color: #f5e9dc;
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 2px solid #e0d2c0;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #7a6450;
+}
+
+/* NAV */
+nav {
+  background-color: #efe2d1;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  margin: 10px 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #5b4636;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #a68463;
+}
+
+/* MAIN & ASIDE */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+main article {
+  background-color: #fffaf3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+aside {
+  background-color: #f5e9dc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #f5e9dc;
+  padding: 20px;
+  border-top: 2px solid #e0d2c0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* АККОРДЕОН */
+.accordion-title {
+  cursor: pointer;
+  background: #efe2d1;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+.accordion-title:hover {
+  background: #e0d2c0;
+}
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background: #fffaf3;
+  border-radius: 8px;
+}
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* ГАЛЕРЕЯ */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1/1; /* фиксированный размер квадрат */
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.filters {
+  margin-bottom: 10px;
+}
+.filters button {
+  margin: 5px;
+  padding: 8px 12px;
+  background: #a68463;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filters button:hover {
+  background: #5b4636;
+}
+
+/* МОДАЛКА */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+  display: block;
+  margin: 100px auto;
+  max-width: 80%;
+  border-radius: 10px;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* КНОПКА "НАВЕРХ" */
+.scroll-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #5b4636;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.scroll-btn:hover {
+  background-color: #a68463;
+}
+
+/* АДАПТИВ */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 10px 0;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
