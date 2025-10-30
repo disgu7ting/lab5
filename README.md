@@ -1,9 +1,15 @@
 # Лабораторная работа №5
 
 ## Скриншоты работы интерактивных элементов
+<img width="2151" height="1163" alt="image" src="https://github.com/user-attachments/assets/382f10c4-5710-4c70-a435-a6301f73995f" />
 
+<img width="943" height="253" alt="image" src="https://github.com/user-attachments/assets/1d41a8f2-7361-4b91-9733-56464364685b" />
 
+<img width="915" height="244" alt="image" src="https://github.com/user-attachments/assets/88a36c78-9100-4852-8ca4-c11b4d5e61bd" />
 
+<img width="918" height="459" alt="image" src="https://github.com/user-attachments/assets/334a1d57-9442-41c2-a1e4-aab0d9b95036" />
+
+<img width="932" height="463" alt="image" src="https://github.com/user-attachments/assets/a6bde470-a5f6-41eb-a9fe-382a1b0fae86" />
 
 
 ## Ответы на вопросы
@@ -26,3 +32,4 @@
 - «Напиши JavaScript, который добавляет кнопку "Наверх". При прокрутке страницы вниз она появляется, при нажатии — плавно прокручивает вверх.»  
 - «Сделай аккордеон на чистом JS: несколько заголовков, при клике открывается и закрывается блок текста.»  
 - «Создай фотогалерею с фильтрацией по категориям.» 
+
